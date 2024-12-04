@@ -5,16 +5,19 @@
     <!-- INICIO DE LISTA DE PERMISOS -->
     <!-- CÁMARA -->
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera" android:required="false" />
-    <!-- INTERNET -->
-    <uses-permission android:name="android.permission.INTERNET" />
-    <!-- ALMACENAMIENTO EXTERNO / LEER Y ESCRIBIR -->
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" tools:ignore="ScopedStorage" />
-    <!-- NOTIFICACIONES -->
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" /> <!-- INTERNET -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- ALMACENAMIENTO EXTERNO / LEER Y ESCRIBIR -->
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="32"
+        tools:ignore="ScopedStorage" /> <!-- NOTIFICACIONES -->
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-    <!-- FIN DE LISTA DE PERMISOS -->
-    <!-- ####################################################################### -->
 
     <application
         android:allowBackup="true"
@@ -26,12 +29,24 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CV_K_v1"
         tools:targetApi="31">
-        <activity android:name=".InicioActivity" android:exported="false" />
-        <activity android:name=".RegisterActivity" android:exported="false" />
-        <activity android:name=".LoginActivity" android:exported="false" />
-        <activity android:name=".MainActivity" android:exported="true">
+        <activity
+            android:name=".RecuperarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InicioActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

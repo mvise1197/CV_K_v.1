@@ -8,15 +8,15 @@ import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import com.google.android.material.navigation.NavigationView
-import com.mv.cv_k_v1.databinding.ActivityInicioBinding
+import com.mv.cv_k_v1.databinding.ActivityPrincipalBinding
 
-class InicioActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+class PrincipalActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
     private lateinit var fragmentManager: FragmentManager
-    private lateinit var binding: ActivityInicioBinding
+    private lateinit var binding: ActivityPrincipalBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityInicioBinding.inflate(layoutInflater)
+        binding = ActivityPrincipalBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         setSupportActionBar(binding.toolbar)

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <!-- TÍTULO -->
+        <TextView style="@style/estilachos_T_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/is"/>
+
+        <!-- CORREO -->
+        <com.google.android.material.textfield.TextInputLayout style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText style="@style/estilachos_et"
+                android:id="@+id/et_correo"
+                android:inputType="textEmailAddress"
+                android:hint="@string/correo"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- CONTRASEÑA -->
+        <com.google.android.material.textfield.TextInputLayout style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText style="@style/estilachos_et"
+                android:id="@+id/et_contrasena"
+                android:inputType="textPassword"
+                android:hint="@string/contrasena"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- BOTON PARA INICIAR SESIÓN -->
+        <Button  style="@style/button"
+            android:id="@+id/btn_is"
+            android:layout_width="wrap_content"
+            android:text="@string/is"/>
+
+        <!-- RECUPERAR CONTRASEÑA -->
+        <TextView style="@style/estilachos_tv_b"
+            android:id="@+id/btn_rc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/frc"/>
+
+        <!-- OPCIÓN PARA REGISTRARSE -->
+        <TextView style="@style/estilachos_tv_b"
+            android:id="@+id/btn_ir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fcc"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

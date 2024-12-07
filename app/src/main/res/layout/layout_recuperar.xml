@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout
+        style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <!-- TTIULO -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rp"
+            style="@style/estilachos_T_tv"/>
+
+        <!-- CORREO -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText
+                android:id="@+id/et_correo"
+                style="@style/estilachos_et"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:hint="@string/correo"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- BOTON PARA INICIAR SESIÓN -->
+        <Button  style="@style/button"
+            android:id="@+id/btn_enviar"
+            android:layout_width="wrap_content"
+            android:text="@string/rp"/>
+
+        <!-- LÍNEA PARA REGRESAR AL INICIO -->
+        <TextView style="@style/estilachos_tv_b"
+            android:id="@+id/tv_inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rl"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

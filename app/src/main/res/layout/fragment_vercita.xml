@@ -3,17 +3,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
+    android:background="@color/white"
     tools:context=".VerCitaFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HOME FRAGMENT"
+        android:text="ESTE SERÁ LA VISTA PARA PODER VER TODAS LAS CITAS EN LA VETERINARIA"
         android:textSize="30dp"
         android:layout_gravity="center"
-        android:textColor="@color/white"
-        />
+        android:textColor="@color/black"/>
 
 </FrameLayout>

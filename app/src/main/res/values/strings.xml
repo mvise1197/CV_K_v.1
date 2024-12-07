@@ -1,12 +1,70 @@
 <resources>
-    <string name="app_name">CV_K_v.1</string>
-    <string name="register">REGISTER</string>
-    <string name="login_email_hint">Email</string>
-    <string name="login_password_hint">Password</string>
-    <string name="signup_login_hint">Already have an account? Sign In</string>
-    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+    <!--TITULO DE LA APP-->
+    <string name="app_name">Cita Vet</string>
+    <!-- ########## TÍTULOS DE BOTONES Y FORMULARIOS ########## -->
+    <!--TITULO BOTÓN ¡Vamos!-->
+    <string name="go">¡Vamos!</string>
+    <!--TITULO DE FORMULARIO Y BOTÓN INICIAR SESIÓN-->
+    <string name="is">Iniciar Sesión</string>
+    <!--TITULO DE FORMULARIO Y BOTÓN CREAR CUENTA-->
+    <string name="cc">Registrarse</string>
+    <!--TITULO DE FORMULARIO Y BOTÓN CREAR CUENTA CON GOOGLE-->
+    <string name="ccg">Registrarse con Google</string>
+    <!--TITULO DE FORMULARIO Y BOTÓN RECUPERAR CONTRASEÑA-->
+    <string name="rp">Recuperar Contraseña</string>
+    <!--TITULO DE FORMULARIO Y BOTÓN CREAR NUEVA CONTRASEÑA-->
+    <string name="gc">Cambiar Contraseña</string>
+    <!--TITULO DE FORMULARIO Y BOTÓN REGISTRAR A LA MASCOTA-->
+    <string name="rpet">Registra a tu mascota</string>
+    <!-- ########## TÍTULOS DE MENÚ DESPLEGABLE ########## -->
+    <!--TITULO DE MENÚ DESPLEGABLE PARA NUEVA CITA-->
+    <string name="nc">Nueva Cita</string>
+    <!--TITULO DE MENÚ DESPLEGABLE PARA VER CITA-->
+    <string name="vc">Ver Citas</string>
+    <!--TITULO DE MENÚ DESPLEGABLE PARA MI MASCOTA-->
+    <string name="mm">Mi mascota</string>
+    <!-- ########## TÍTULOS DE TEXTVIEW CLICLEABLE ########## -->
+    <!--TITULO DE TEXTVIEW PARA REGRESAR AL INICIO-->
+    <string name="rl">Regresar al Inicio</string>
+    <!--TITULO DE TEXTVIEW PARA IR AL FORMULARIO DE RECUPERAR CONTRASEÑA-->
+    <string name="frc">¿Olvidaste tu Contraseña?</string>
+    <!--TITULO DE TEXTVIEW PARA IR AL FORMULARIO DE REGISTRO-->
+    <string name="fcc">¿No tienes una cuenta? Registrate</string>
+    <!-- ########## TITULO DE TEXTVIEW LOS FORMULARIOS ########## -->
+    <!--TITULO DE TEXTVIEW NOMBRES Y APELLIDOS-->
+    <string name="nomap">Nombres y Apellidos</string>
+    <!--TITULO DE TEXTVIEW CELULAR-->
+    <string name="cel">Celular</string>
+    <!--TITULO DE TEXTVIEW CORREO-->
+    <string name="correo">Correo</string>
+    <!--TITULO DE TEXTVIEW CONTRASEÑA-->
+    <string name="contrasena">Contraseña</string>
+    <!-- ########## TITULO DE TEXTVIEW LOS FORMULARIOS DE REGISTRO DE MASCOTAS ########## -->
+    <!--TITULO DE TEXTVIEW NOMBRE DE LA MASCOTA-->
+    <string name="nomPet">Nombre de la Mascota</string>
+    <!--TITULO DE TEXTVIEW EDAD DE LA MASCOTA-->
+    <string name="edadPet">Edad de la Mascota</string>
+    <!--TITULO DE TEXTVIEW PESO DE LA MASCOTA-->
+    <string name="kgPet">Peso de la Mascota</string>
+    <!--TITULO DE TEXTVIEW RAZA DE LA MASCOTA-->
+    <string name="rzPet">Raza de la Mascota</string>
+    <!--TITULO DE TEXTVIEW SEXO DE LA MASCOTA-->
+    <string name="sexPet">Sexo de la Mascota</string>
+    <!--TITULO DE TEXTVIEW FC DE LA MASCOTA-->
+    <string name="fcPet">Fecha de Nacimiento de la Mascota</string>
+    <!--TITULO DE TEXTVIEW CANT. VAC. DE LA MASCOTA-->
+    <string name="vacPet">¿ Qué Vacunas Tiene?</string>
+    <!--TITULO DE TEXTVIEW ALERGIAS DE LA MASCOTA-->
+    <string name="alergPet">Alergias de la Mascota</string>
+    <!--TITULO DE TEXTVIEW FOTO DE LA MASCOTA-->
+    <string name="photoPet">Foto de la Mascota</string>
+
+
+
+
+
+    <!-- ########## TITULO PARA OTRAS VARIABLES ########## -->
+    <string name="ci">ci</string>
     <string name="nav_open">Open Navegation Drawer</string>
     <string name="nav_close">Close Navegation Drawer</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -1,19 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#11BB33"
+    android:orientation="vertical"
+    style="@style/loginParent"
+    android:background="@color/white"
     tools:context=".PetsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SHOPPING FRAGMENT"
-        android:textSize="30dp"
-        android:layout_gravity="center"
-        android:textColor="@color/white"
-        />
+    <ScrollView style="@style/parent">
+        <RelativeLayout style="@style/parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentTop="true"
+                android:weightSum="12">
 
-</FrameLayout>
+                <LinearLayout style="@style/parent"
+                    android:background="@drawable/encabezado_form"
+                    android:orientation="vertical"
+                    android:layout_weight="3">
+
+                    <LinearLayout style="@style/parent"
+                        android:background="@drawable/encabezado_onda"
+                        android:contentDescription="@string/ci"/>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="60dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <ImageView style="@style/ilogin"
+                    android:id="@+id/ilogin"
+                    android:contentDescription="@string/ci"/>
+
+                <include layout="@layout/layout_rpets"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -5,12 +5,12 @@
     android:layout_height="180dp"
     android:gravity="center"
     android:padding="18dp"
-    android:background="#12ab3c">
+    android:background="@color/white">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
-        android:src="@drawable/logo_fedex"/>
+        android:src="@drawable/ilogin"/>
 
 </LinearLayout>

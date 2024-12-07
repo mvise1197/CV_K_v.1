@@ -64,4 +64,6 @@ dependencies {
     implementation(libs.firebase.storage.ktx)
     // Realtime Database
     implementation(libs.firebase.database.ktx)
+    //Google Play Services
+    implementation(libs.play.services.auth)
 }

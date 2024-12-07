@@ -7,7 +7,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 
-class LoginActivity : AppCompatActivity() {
+class IniciarSesionActivity : AppCompatActivity() {
     private lateinit var txtEmail: EditText
     private lateinit var txtPassword: EditText
     private lateinit var btnLogin: Button
@@ -16,18 +16,18 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        setContentView(R.layout.activity_iniciarsesion)
         initialise()
 
         // Navegar a la actividad de registro
-        val tvRegistrarse = findViewById<TextView>(R.id.tv_registrarse)
+        val tvRegistrarse = findViewById<TextView>(R.id.btn_ir)
         tvRegistrarse.setOnClickListener {
-            val intent = Intent(this, RegisterActivity::class.java)
+            val intent = Intent(this, RegistrarseActivity::class.java)
             startActivity(intent)
         }
 
         // Navegar a la actividad de recuperación de contraseña
-        val tvRecuperar = findViewById<TextView>(R.id.tv_recuperar)
+        val tvRecuperar = findViewById<TextView>(R.id.btn_rc)
         tvRecuperar.setOnClickListener {
             val intent = Intent(this, RecuperarActivity::class.java)
             startActivity(intent)
@@ -37,7 +37,7 @@ class LoginActivity : AppCompatActivity() {
     private fun initialise() {
         txtEmail = findViewById(R.id.et_correo)
         txtPassword = findViewById(R.id.et_contrasena)
-        btnLogin = findViewById(R.id.btn_login)
+        btnLogin = findViewById(R.id.btn_is)
         progressBar = ProgressDialog(this)
         auth = FirebaseAuth.getInstance()
 
@@ -63,7 +63,7 @@ class LoginActivity : AppCompatActivity() {
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    progressBar.hide()
+                    progressBar.dismiss()
                     Toast.makeText(this, "Inicio de sesión exitoso.", Toast.LENGTH_SHORT).show()
                     goHome()
                 } else {
@@ -74,7 +74,7 @@ class LoginActivity : AppCompatActivity() {
     }
 
     private fun goHome() {
-        val intent = Intent(this, InicioActivity::class.java)
+        val intent = Intent(this, PrincipalActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
         finish()

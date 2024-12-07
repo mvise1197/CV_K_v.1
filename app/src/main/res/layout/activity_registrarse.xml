@@ -4,7 +4,7 @@
     android:orientation="vertical"
     style="@style/loginParent"
     android:background="@drawable/login"
-    tools:context=".RecuperarActivity">
+    tools:context=".RegistrarseActivity">
 
     <ScrollView style="@style/parent">
         <RelativeLayout style="@style/parent">
@@ -38,7 +38,7 @@
                     android:id="@+id/ilogin"
                     android:contentDescription="@string/ci"/>
 
-                <include layout="@layout/layout_recuperar"/>
+                <include layout="@layout/layout_registrarse"/>
             </LinearLayout>
         </RelativeLayout>
     </ScrollView>

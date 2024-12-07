@@ -7,17 +7,17 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/home"
-            android:title="Home"/>
+            android:title="@string/nc"/>
 
         <item
             android:id="@+id/nav_account"
             android:icon="@drawable/account"
-            android:title="Account"/>
+            android:title="@string/vc"/>
 
         <item
             android:id="@+id/nav_shopping"
             android:icon="@drawable/shopping"
-            android:title="Shopping"/>
+            android:title="@string/mm"/>
     </group>
 
 </menu>

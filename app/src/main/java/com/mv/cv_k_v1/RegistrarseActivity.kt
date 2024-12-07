@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.*
 import com.google.firebase.firestore.FirebaseFirestore
 
-class RegisterActivity : AppCompatActivity() {
+class RegistrarseActivity : AppCompatActivity() {
     private lateinit var txtName: EditText
     private lateinit var txtEmail: EditText
     private lateinit var txtPhone: EditText
@@ -20,13 +20,13 @@ class RegisterActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
+        setContentView(R.layout.activity_registrarse)
         initialise()
 
         // Navegar a la actividad de inicio de sesión
         val tvInicio = findViewById<TextView>(R.id.tv_inicio)
         tvInicio.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, IniciarSesionActivity::class.java)
             startActivity(intent)
         }
     }
@@ -99,7 +99,7 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     private fun updateUserInfoAndGoHome() {
-        val intent = Intent(this, InicioActivity::class.java)
+        val intent = Intent(this, PrincipalActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
         finish()

@@ -8,8 +8,8 @@ import com.google.firebase.auth.FirebaseAuth
 
 class RecuperarActivity : AppCompatActivity() {
 
-    private lateinit var et_correo: EditText
-    private lateinit var btn_enviar: Button
+    private lateinit var etCorreo: EditText
+    private lateinit var btnEnviar: Button
     private lateinit var mAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,24 +20,24 @@ class RecuperarActivity : AppCompatActivity() {
         // Navegar a la actividad de registro
         val tvRegistrarse = findViewById<TextView>(R.id.tv_inicio)
         tvRegistrarse.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
+            val intent = Intent(this, IniciarSesionActivity::class.java)
             startActivity(intent)
         }
     }
 
     private fun initialise() {
-        et_correo = findViewById(R.id.et_correo)
-        btn_enviar = findViewById(R.id.btn_enviar)
+        etCorreo = findViewById(R.id.et_correo)
+        btnEnviar = findViewById(R.id.btn_enviar)
         mAuth = FirebaseAuth.getInstance()
 
         // Configurar el evento para el botón de enviar correo
-        btn_enviar.setOnClickListener {
+        btnEnviar.setOnClickListener {
             sendPasswordResetEmail()
         }
     }
 
     private fun sendPasswordResetEmail() {
-        val email = et_correo.text.toString().trim()
+        val email = etCorreo.text.toString().trim()
 
         if (email.isNotEmpty()) {
             mAuth.sendPasswordResetEmail(email)
@@ -55,7 +55,7 @@ class RecuperarActivity : AppCompatActivity() {
     }
 
     private fun goInicio() {
-        val intent = Intent(this, LoginActivity::class.java)
+        val intent = Intent(this, IniciarSesionActivity::class.java)
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         startActivity(intent)
     }

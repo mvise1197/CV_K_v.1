@@ -31,13 +31,26 @@
                 android:hint="@string/nomPet"/>
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- ESPECIE DE LA MASCOTA-->
+
+        <com.google.android.material.textfield.TextInputLayout style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <TextView style="@style/estilachos_et"
+                android:hint="@string/espPet"/>
+            <Spinner style="@style/estilachos_et"
+                android:id="@+id/espPet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
         <!-- EDAD DE LA MASCOTA -->
         <com.google.android.material.textfield.TextInputLayout
             style="@style/parent"
             android:layout_marginTop="@dimen/loginViewsMargin">
             <EditText style="@style/estilachos_et"
                 android:id="@+id/edadPet"
-                android:inputType="textEmailAddress"
+                android:inputType="text"
                 android:hint="@string/edadPet"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -47,7 +60,7 @@
             android:layout_marginTop="@dimen/loginViewsMargin">
             <EditText style="@style/estilachos_et"
                 android:id="@+id/kgPet"
-                android:inputType="number"
+                android:inputType="text"
                 android:hint="@string/kgPet"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -57,28 +70,21 @@
             android:layout_marginTop="@dimen/loginViewsMargin">
             <EditText style="@style/estilachos_et"
                 android:id="@+id/rzPet"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:hint="@string/rzPet"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- SEXO DE LA MASCOTA -->
+        <!-- SEXO DE LA MASCOTA-->
 
         <com.google.android.material.textfield.TextInputLayout style="@style/parent"
             android:layout_marginTop="@dimen/loginViewsMargin">
-            <EditText style="@style/estilachos_et"
-                android:id="@+id/sexPet"
-                android:inputType="text"
+            <TextView style="@style/estilachos_et"
                 android:hint="@string/sexPet"/>
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <!-- FC DE LA MASCOTA -->
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/parent"
-            android:layout_marginTop="@dimen/loginViewsMargin">
-            <EditText style="@style/estilachos_et"
-                android:id="@+id/fcPet"
-                android:inputType="number"
-                android:hint="@string/fcPet"/>
+            <Spinner style="@style/estilachos_sp"
+                android:id="@+id/sexPet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:spinnerMode="dropdown"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <!-- CANT. VAC. DE LA MASCOTA -->
@@ -87,7 +93,7 @@
             android:layout_marginTop="@dimen/loginViewsMargin">
             <EditText style="@style/estilachos_et"
                 android:id="@+id/vacPet"
-                android:inputType="number"
+                android:inputType="text"
                 android:hint="@string/vacPet"/>
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -97,11 +103,11 @@
             android:layout_marginTop="@dimen/loginViewsMargin">
             <EditText style="@style/estilachos_et"
                 android:id="@+id/alergPet"
-                android:inputType="textPassword"
+                android:inputType="text"
                 android:hint="@string/alergPet"/>
         </com.google.android.material.textfield.TextInputLayout>
 
-        <!-- FOTO DE LA MASCOTA -->
+        <!-- FOTO DE LA MASCOTA
         <com.google.android.material.textfield.TextInputLayout
             style="@style/parent"
             android:layout_marginTop="@dimen/loginViewsMargin">
@@ -110,11 +116,11 @@
                 android:inputType="textEmailAddress"
                 android:hint="@string/photoPet"/>
 
-        </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout-->
 
         <!-- BOTÓN PARA REGISTRARSE -->
         <Button  style="@style/button"
-            android:id="@+id/btn_login"
+            android:id="@+id/btnPet"
             android:layout_width="wrap_content"
             android:text="@string/rpet"/>
 

@@ -44,7 +44,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:id="@+id/bottom_navigation"
-                    app:menu="@menu/bottom_menu"
+                    app:menu="@menu/menu_horizontal"
                     android:background="@color/whiteCardColor"/>
             </com.google.android.material.bottomappbar.BottomAppBar>
 
@@ -57,7 +57,7 @@
         android:layout_height="match_parent"
         android:id="@+id/navigation_drawer"
         android:layout_gravity="start"
-        app:menu="@menu/nav_menu"
+        app:menu="@menu/menu_vertical"
         app:headerLayout="@layout/nav_header"/>
 
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -22,6 +22,10 @@
         <item name="android:backgroundTint">@color/primaryTextColor</item>
         <item name="android:maxLines">1</item>
     </style>
+    <!--ESTILO PARA LOS SPINNERS-->
+    <style name="estilachos_sp" parent="parent">
+        <item name="android:paddingTop">5dp</item>
+    </style>
     <!--ESTILO PARA BOTÓNES-->
     <style name="button" parent="viewParent">
         <item name="android:background">@drawable/estilo_boton</item>

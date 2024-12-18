@@ -17,12 +17,21 @@
     <!--TITULO DE FORMULARIO Y BOTÓN REGISTRAR A LA MASCOTA-->
     <string name="rpet">Registra a tu mascota</string>
     <!-- ########## TÍTULOS DE MENÚ DESPLEGABLE ########## -->
-    <!--TITULO DE MENÚ DESPLEGABLE PARA NUEVA CITA-->
-    <string name="nc">Nueva Cita</string>
-    <!--TITULO DE MENÚ DESPLEGABLE PARA VER CITA-->
-    <string name="vc">Ver Citas</string>
+    <string name="mp">Mi Perfil</string>
     <!--TITULO DE MENÚ DESPLEGABLE PARA MI MASCOTA-->
     <string name="mm">Mi mascota</string>
+    <!--TITULO DE MENÚ DESPLEGABLE PARA CERRAR SESIÓN-->
+    <string name="exit">Cerrar Sesión</string>
+    <!--TITULO DE MENÚ DESPLEGABLE PARA VER CITA-->
+    <string name="vc">Ver Citas</string>
+    <!--TITULO DE MENÚ DESPLEGABLE PARA NUEVA CITA-->
+    <string name="nc">Nueva Cita</string>
+    <!--TITULO DE MENÚ DESPLEGABLE PARA NUEVA CITA-->
+    <string name="pi">Inicio</string>
+    <!--TITULO DE MENÚ DESPLEGABLE PARA NUEVA CITA-->
+    <string name="rm">Registrar Mascots</string>
+    <!-- ########## TÍTULOS DE TEXTVIEW CLICLEABLE ########## -->
+    <string name="nm">Registrar mascota</string>
     <!-- ########## TÍTULOS DE TEXTVIEW CLICLEABLE ########## -->
     <!--TITULO DE TEXTVIEW PARA REGRESAR AL INICIO-->
     <string name="rl">Regresar al Inicio</string>
@@ -42,6 +51,8 @@
     <!-- ########## TITULO DE TEXTVIEW LOS FORMULARIOS DE REGISTRO DE MASCOTAS ########## -->
     <!--TITULO DE TEXTVIEW NOMBRE DE LA MASCOTA-->
     <string name="nomPet">Nombre de la Mascota</string>
+    <!--TITULO DE TEXTVIEW ESPECIE DE LA MASCOTA-->
+    <string name="espPet">Especie de la Mascota</string>
     <!--TITULO DE TEXTVIEW EDAD DE LA MASCOTA-->
     <string name="edadPet">Edad de la Mascota</string>
     <!--TITULO DE TEXTVIEW PESO DE LA MASCOTA-->
@@ -60,11 +71,10 @@
     <string name="photoPet">Foto de la Mascota</string>
 
 
-
-
-
     <!-- ########## TITULO PARA OTRAS VARIABLES ########## -->
     <string name="ci">ci</string>
     <string name="nav_open">Open Navegation Drawer</string>
     <string name="nav_close">Close Navegation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

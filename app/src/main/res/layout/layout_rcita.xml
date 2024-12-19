@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/loginCard"
+    app:cardCornerRadius="@dimen/loginCardRadius"
+    android:elevation="5dp"
+    android:layout_gravity="center"
+    android:layout_marginTop="@dimen/loginViewsMargin"
+    android:layout_marginBottom="@dimen/loginViewsMargin"
+    android:background="@color/whiteCardColor">
+
+    <LinearLayout style="@style/linearParent"
+        android:layout_gravity="center"
+        android:padding="@dimen/loginViewsMargin">
+
+        <!-- TITULO LOS ESTILOS LOS ESTOY LLAMANDO DE STYLES.XML-->
+
+        <TextView style="@style/estilachos_T_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rc"/>
+
+        <!-- NOMBRE DE LA MASCOTA -->
+
+        <com.google.android.material.textfield.TextInputLayout style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText style="@style/estilachos_et"
+                android:id="@+id/nomPet"
+                android:inputType="text"
+                android:hint="@string/nomPet"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- MOTIVO DE LA CITA -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText style="@style/estilachos_et"
+                android:id="@+id/mcit"
+                android:inputType="text"
+                android:hint="@string/mcit"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- FECHA DE LA CITA -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText style="@style/estilachos_et"
+                android:id="@+id/fcit"
+                android:inputType="text"
+                android:hint="@string/fcit"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- HORA DE LA CITA -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText style="@style/estilachos_et"
+                android:id="@+id/hcit"
+                android:inputType="text"
+                android:hint="@string/hcit"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- FOTO DE LA MASCOTA
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/parent"
+            android:layout_marginTop="@dimen/loginViewsMargin">
+            <EditText style="@style/estilachos_et"
+                android:id="@+id/photoPet"
+                android:inputType="textEmailAddress"
+                android:hint="@string/photoPet"/>
+
+        </com.google.android.material.textfield.TextInputLayout-->
+
+        <!-- BOTÓN PARA REGISTRARSE -->
+        <Button  style="@style/button"
+            android:id="@+id/btnCita"
+            android:layout_width="wrap_content"
+            android:text="@string/rc"/>
+
+        <!-- LÍNEA PARA REGRESAR AL INICIO -->
+        <TextView style="@style/estilachos_tv_b"
+            android:id="@+id/tv_inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rl"/>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

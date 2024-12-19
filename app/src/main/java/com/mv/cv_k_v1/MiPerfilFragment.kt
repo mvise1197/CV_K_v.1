@@ -1,5 +1,6 @@
 package com.mv.cv_k_v1
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -32,6 +33,7 @@ class MiPerfilFragment : Fragment() {
         return view
     }
 
+    @SuppressLint("SetTextI18n")
     private fun loadUserProfile() {
         val uid = auth.currentUser?.uid ?: return
 
@@ -43,9 +45,9 @@ class MiPerfilFragment : Fragment() {
                     val phone = document.getString("phone") ?: "Sin teléfono"
 
                     // Mostrar datos en las vistas
-                    txtName.text = name
-                    txtEmail.text = email
-                    et_cel.text = phone
+                    txtName.text = "Usuario: $name"
+                    txtEmail.text = "Correo: $email"
+                    et_cel.text = "Celular: $phone"
                 }
             }
             .addOnFailureListener { e ->

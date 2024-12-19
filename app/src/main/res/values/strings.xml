@@ -8,6 +8,8 @@
     <string name="is">Iniciar Sesión</string>
     <!--TITULO DE FORMULARIO Y BOTÓN CREAR CUENTA-->
     <string name="cc">Registrarse</string>
+    <!--TITULO DE FORMULARIO Y BOTÓN CREAR CUENTA-->
+    <string name="rc">Registrar Nueva Cita</string>
     <!--TITULO DE FORMULARIO Y BOTÓN CREAR CUENTA CON GOOGLE-->
     <string name="ccg">Registrarse con Google</string>
     <!--TITULO DE FORMULARIO Y BOTÓN RECUPERAR CONTRASEÑA-->
@@ -67,8 +69,13 @@
     <string name="vacPet">¿ Qué Vacunas Tiene?</string>
     <!--TITULO DE TEXTVIEW ALERGIAS DE LA MASCOTA-->
     <string name="alergPet">Alergias de la Mascota</string>
-    <!--TITULO DE TEXTVIEW FOTO DE LA MASCOTA-->
-    <string name="photoPet">Foto de la Mascota</string>
+    <!-- ########## TITULO DE TEXTVIEW LOS FORMULARIOS DE REGISTRO DE MASCOTAS ########## -->
+    <!--TITULO DE TEXTVIEW NOMBRE DE LA MASCOTA-->
+    <string name="mcit">Motivo de la Cita</string>
+    <!--TITULO DE TEXTVIEW ESPECIE DE LA MASCOTA-->
+    <string name="fcit">Fecha de la Cita</string>
+    <!--TITULO DE TEXTVIEW EDAD DE LA MASCOTA-->
+    <string name="hcit">Hora de la Cita</string>
 
 
     <!-- ########## TITULO PARA OTRAS VARIABLES ########## -->

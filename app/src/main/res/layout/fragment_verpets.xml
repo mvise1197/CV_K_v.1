@@ -5,10 +5,29 @@
     android:layout_height="match_parent"
     tools:context=".VerPetsFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
+    <RelativeLayout
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/principal" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:id="@+id/toolbar"
+            android:elevation="5dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/fragment_container">
+
+        </FrameLayout>
+
+    </RelativeLayout>
 
 </FrameLayout>
